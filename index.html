@@ -1,0 +1,22 @@
+<!-- todo_app/static/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        <div id="tasks-container"></div>
+        <form id="task-form">
+            <input type="text" id="title" placeholder="Task title" required>
+            <textarea id="description" placeholder="Task description" required></textarea>
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>
